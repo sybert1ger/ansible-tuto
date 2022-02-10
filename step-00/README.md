@@ -57,7 +57,7 @@ settings of your machine.
 If you get errors like:
 
 ```none
-fatal: [192.168.33.10]: UNREACHABLE! => {"changed": false, "msg": "host key mismatch for 192.168.33.10", "unreachable": true}
+fatal: [10.10.100.10]: UNREACHABLE! => {"changed": false, "msg": "host key mismatch for 10.10.100.10", "unreachable": true}
 ```
 
 then you probably already have SSH host keys for those IPs in your

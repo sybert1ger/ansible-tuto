@@ -184,7 +184,7 @@ PLAY RECAP *********************
 host1              : ok=9   changed=8    unreachable=0    failed=0
 ```
 
-You can now browse to [http://192.168.33.11](http://192.168.33.11), and it
+You can now browse to [http://10.10.100.11](http://10.10.100.11), and it
 should display a picture, and the server hostname.
 
 Note the `tags: deploy` line allows you to execute just a part of the playbook.

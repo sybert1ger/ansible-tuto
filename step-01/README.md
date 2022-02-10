@@ -8,9 +8,9 @@ flag in ansible commands an provide the inventory path.
 We've created an inventory file for you in the directory that looks like this:
 
 ```bash
-host0 ansible_host=192.168.33.10 ansible_user=root
-host1 ansible_host=192.168.33.11 ansible_user=root
-host2 ansible_host=192.168.33.12 ansible_user=root
+host0 ansible_host=10.10.100.10 ansible_user=root
+host1 ansible_host=10.10.100.11 ansible_user=root
+host2 ansible_host=10.10.100.12 ansible_user=root
 ```
 
 `ansible_host` is a special _variable_ that sets the IP ansible will use when

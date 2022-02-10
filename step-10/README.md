@@ -50,7 +50,7 @@ listen cluster
 We have many new things going on here.
 
 First, `{{ ansible_host }}` will be replaced by the 2nd IP of the server, which
-happens to be 192.168.33.10.
+happens to be 10.10.100.10.
 
 Then, we have a loop. This loop is used to build the backend servers list. It
 will loop over every host listed in the `[web]` group (and put this host in the
@@ -202,11 +202,11 @@ host1              : ok=10   changed=5    unreachable=0    failed=0
 host2              : ok=10   changed=5    unreachable=0    failed=0
 ```
 
-Looks good. Now head to [http://192.168.33.10/](http://192.168.33.10/) and
+Looks good. Now head to [http://10.10.100.10/](http://10.10.100.10/) and
 see the result. Your cluster is deployed!
 
 you can even peek at HAProxy's statistics at
-[http://192.168.33.10/haproxy?stats](http://192.168.33.10/haproxy?stats).
+[http://10.10.100.10/haproxy?stats](http://10.10.100.10/haproxy?stats).
 
 Now on to the next chapter about "Variables again", in
 [step-11](https://github.com/leucos/ansible-tuto/tree/master/step-11).
