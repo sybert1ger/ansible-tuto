@@ -9,11 +9,11 @@ balancer we'll configure in the next step. But let's complete the inventory now.
 
 ```ini
 [web]
-host1 ansible_host=10.10.100.11 ansible_user=root
-host2 ansible_host=10.10.100.12 ansible_user=root
+host1 ansible_host=192.168.33.11 ansible_user=root
+host2 ansible_host=192.168.33.12 ansible_user=root
 
 [haproxy]
-host0 ansible_host=10.10.100.10 ansible_user=root
+host0 ansible_host=192.168.33.10 ansible_user=root
 ```
 
 Remember we're specifying `ansible_host` here because the host has a
